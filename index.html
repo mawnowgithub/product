@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <title>Social Media Dashboard</title>    
+</head>
+<body id="main-page-body-tag">
+    <div class="bg-decorator-page"></div>
+
+    <div class="g-main-container">
+
+        <header class="g-row u-margin--l-10 u-margin u-margin--r-10">
+          <section class="g-col g-col--2 g-col--static">
+              <div class="g-row u-margin">
+                  <div class="g-col g-col--4">
+                      <h1 class="text text--title text--big u-spacer-vertical u-spacer-vertical--5">
+                          Social Media Dashboard
+                      </h1>
+                      <p class="text text--line">
+                        <span>Total Followers:</span>
+                        <span id="total-followers-number">---</span>
+                    </p>
+                  </div>
+              </div>         
+           
+        </section>
+        <section class="g-col g-col--2 g-col--static u-align-flex u-align-flex--right u-align-flex--vertical-center">
+            <button class="btn btn--toggle">
+                <span class="btn__text text text--line">
+                    Dark Mode
+                </span>
+                <div class="btn__switch-background">
+                    <div class="btn__switch-indicator">
+
+                    </div>
+                </div>
+            </button>
+        </section>
+        </header>
+
+        <div class="u-spacer-vertical u-spacer-vertical--responsive-30"></div>        
+     
+        <main>
+    
+            <section id="big-card-showcase" class="g-row">
+
+                <div id="big-card-showcase-content" class="g-col g-col--4"> 
+                    <!--big card content here-->                               
+                </div>                     
+
+
+            </section>
+    
+            <div class="u-spacer-vertical u-spacer-vertical--20"></div>        
+            <div class="u-spacer-vertical u-spacer-vertical--20"></div>
+        
+    
+           <section class="g-row small-card-showcase">
+               <header class= "g-col g-col--4 u-margin u-margin--l-10 u-margin u-margin--r-10">
+                <h2 class="text text--title">Overview - Today</h2>
+               </header>
+               <div class="g-col g-col--4 u-spacer-vertical u-spacer-vertical--responsive-20"></div>                
+               <div id="small-card-showcase-content" class="g-col g-col--4">
+                  <!--small card content here-->
+               </div>    
+              
+            </section>             
+
+        </main>
+    </div>
+
+    <div id="main-modal" class="modal" tabindex="0">
+        <div class="modal__back">
+            <div class="modal__content">
+                <div id="modal-close-button" class="modal__close-button">
+                    <button class="btn btn--icon">
+                        <img src="images/icon-close.svg">
+                    </button>
+                </div>
+                <div class="modal__body">
+                      
+                    <div class="chart-showcase">
+                        <header class="chart-showcase__header">       
+                            <h2 id="chart-title-text" class="chart-showcase__title text text--title">
+                                ---
+                            </h2>
+                            <div class="chart-showcase__subtitle">
+
+                                <div class="icon-flag">
+                                    <img id="social-icon-container" alt="social-icon" class="icon-flag__icon icon" src="">
+                                    <span id="profile-user-name" class="icon-flag__text text text--line"></span>
+                                </div>
+
+                            </div>
+                            <div class="chart-showcase__top-data">
+
+                                <div class="figure-flag figure-flag--normal">
+                                    <div class="figure-flag__figure">
+                                    <span id="total-followers-number-chart" class="text text--numeral text--medium">
+                                        ---
+                                        </span> 
+                                    </div>
+                                    <div class="figure-flag__description figure-flag__description--short">
+                                        <p class="text text--body text--small">Total followers</p>
+                                    </div>
+                                </div>
+
+                                <div id="recent-followers-number-flag" class="figure-flag">
+                                    <div class="figure-flag__figure">
+                                    <span id="recent-followers-number"class="text text--numeral text--medium">
+                                        ---
+                                        </span> 
+                                    </div>
+                                    <div class="figure-flag__description">
+                                        <p class="text text--body text--small">New followers in the past 10 days</p>
+                                    </div>
+                                </div>
+
+                                <div id="today-followers-number-flag" class="figure-flag">
+                                    <div class="figure-flag__figure">
+                                    <span id="today-followers-number" class="text text--numeral text--medium">
+                                        --
+                                        </span> 
+                                    </div>
+                                    <div class="figure-flag__description">
+                                        <p class="text text--body text--small">New followers TODAY</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </header>
+                        <div class="chart-showcase__body">
+                            <div class="chart-showcase__data-title">
+                                <h2 id="chart-custom-title" class="text text--line text--big text--400"> 
+                                    ...
+                                </h2>
+                            </div>
+                            <div class="chart-showcase__chart-graph">
+                                <canvas id="chart-showcase-target">
+                                    <!--chart will be rendered here-->
+                                </canvas>
+                            </div>
+                        </div>                            
+                    </div>
+                  
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
+    <script src="scripts/data.js"></script>    
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>

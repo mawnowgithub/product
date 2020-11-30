@@ -1,0 +1,159 @@
+// file containing all typographic definitios for the project
+
+// general class for all text elements
+
+.text{
+    $parent:&;
+    font-family: 'Inter', sans-serif;   
+    line-height: 24px;
+    font-size: 24px;    
+
+    // title text types
+    &--title{
+        color:$white;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+
+
+        @media #{$tablet-break}{
+            font-size: 20px;
+           line-height: 20px;
+
+        }
+        
+        @media #{$pc-break}{
+           font-size: 24px;
+           line-height: 24px;
+        }
+
+        &#{$parent}--big{
+            font-size: 20px;
+            line-height: 20px;
+
+            @media #{$tablet-break}{
+                font-size: 24px;
+                line-height: 24px;
+            }
+            
+            @media #{$pc-break}{
+                font-size: 28px;
+                line-height: 28px;
+            }
+
+        }
+
+        &#{$parent}--small{
+            font-size: 15px;
+        }
+    }
+
+    // line text types
+    &--line{
+
+        font-size: 14px;
+        color: $desaturated-blue;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 12px;
+
+        @media #{$tablet-break}{
+            font-size: 14px;
+        }     
+
+        &#{$parent}--small{
+            font-size:12px
+        }
+
+        &#{$parent}--big{
+
+            font-size: 14px;
+            line-height: 14px;           
+
+            @media #{$tablet-break}{
+                font-size: 16px;
+                line-height: 16px;
+            }
+            
+            @media #{$pc-break}{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+
+        &#{$parent}--400{
+            font-weight: 400;
+        }
+
+        &#{$parent}--expanded{
+            letter-spacing: 3.5px;
+        }       
+
+        &#{$parent}--uppercase{
+            text-transform: uppercase;
+        }
+        
+        &#{$parent}--lime{
+            color: $lime-green;
+        }
+
+        &#{$parent}--red{
+            color: $bright-Red;
+        }
+
+        &#{$parent}--white{
+            color: $white;
+        }
+     
+    }
+
+    // numeral text types
+    &--numeral{
+        color: $white;
+        font-weight: 700;
+        letter-spacing: -1;
+        font-size: 20px;
+
+        &#{$parent}--big{
+            font-size: 35px;
+            line-height: 35px;
+            
+            @media #{$tablet-break}{
+                font-size: 45px;
+                line-height: 45px;
+            }
+            
+            @media #{$pc-break}{
+                font-size: 55px;
+                line-height: 55px;
+            }
+
+        }
+
+        &#{$parent}--medium{
+            font-size: 20px;
+            line-height: 20px;
+
+            @media #{$tablet-break}{
+                font-size: 25px;
+                line-height: 25px;
+            }
+            
+            @media #{$pc-break}{
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    // body text type
+    &--body{
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+        &#{$parent}--small{
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

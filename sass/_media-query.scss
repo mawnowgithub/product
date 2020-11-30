@@ -1,0 +1,17 @@
+// file containing break points variables for the project
+
+$tablet-break: "screen and (min-width:"+ $tablet-resolution +")";
+$pc-break: "screen and (min-width:"+ $pc-resolution +")";
+$pc-break-hd: "screen and (min-width:"+ $pc-resolution-hd +")";
+
+@media #{$tablet-break}{
+    // styles
+}
+
+@media #{$pc-break}{
+   // styles
+}
+
+@media #{$pc-break-hd}{
+    // styles
+ }

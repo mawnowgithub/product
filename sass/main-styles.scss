@@ -1,0 +1,25 @@
+// file which gets rendered when processing sass
+// it contains the project definitions from general to specific ones
+
+@import "variables";
+@import "media-query";
+
+@import "base";
+
+@import "grid-system";
+@import "utilities";
+
+@import "typography";
+@import "elements";
+@import "buttons";
+
+// components
+@import "modal";
+@import "cards";
+@import "chart-showcase";
+
+// customization for specific elements
+@import "custom";
+
+
+

@@ -1,0 +1,81 @@
+// file containing definitions for chart-showcase component
+
+.chart-showcase{
+    background-color: $dark-blue;
+    border-radius: 20px;
+    &__header{        
+
+        padding:20px;
+
+        @media #{$tablet-break}{
+            padding:30px 30px 20px 30px;
+        }
+        
+        @media #{$pc-break}{
+            padding:40px 40px 20px 40px;
+        }
+
+    }
+
+    &__title{
+        margin-bottom:10px;
+
+        @media #{$tablet-break}{
+            margin-bottom:15px;
+        }
+        
+        @media #{$pc-break}{
+            margin-bottom:20px;
+        }
+    }
+
+    &__subtitle{
+        margin-bottom:30px;        
+    }
+
+    &__top-data{
+       display:flex;
+       flex-wrap: wrap;
+    }  
+
+    &__body{
+        padding:20px;
+        background-color: $very-dark-blue;
+        border-radius: 20px;
+
+        @media #{$tablet-break}{
+            padding:30px;
+        }
+        
+        @media #{$pc-break}{
+            padding:40px;
+        }
+        
+    }
+
+    &__data-title{
+        margin-bottom: 20px;
+
+        @media #{$tablet-break}{
+            margin-bottom: 30px;
+        }
+        
+        @media #{$pc-break}{
+            margin-bottom: 40px;
+        }
+    }
+    &__chart-graph{
+
+        position: relative;        
+        width:100%;
+        height:250px; 
+
+        @media #{$tablet-break}{
+            height:250px; 
+        }
+        
+        @media #{$pc-break}{
+            height:300px; 
+        }
+    }
+}

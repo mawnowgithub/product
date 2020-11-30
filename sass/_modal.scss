@@ -1,0 +1,60 @@
+// file containing definitions for modal component
+// given the way it was build, it can present any content in modal form
+
+.modal{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left: 0;
+    z-index:2000;
+    transition:all 0.2s;
+    display:none;
+
+    &--open{
+        display:block;
+    }
+    
+    &__back{
+        background-color: rgba(0,0,0,0.5);
+        display:flex;        
+        width:100%;
+        height: 100%;
+        padding: 20px 0;
+        overflow-x: scroll;
+
+        @media #{$tablet-break}{
+            padding: 30px 0;
+            //align-items: center;
+            justify-content: center;
+        }
+        
+        @media #{$pc-break}{
+            padding: 35px 0;          
+        }
+    }
+
+    &__content{       
+        position:relative;
+        width:100%;
+        max-width:450px;
+        margin:0 auto;
+
+        @media #{$tablet-break}{
+            width:90%;
+            max-width:1000px;
+        }        
+        
+        
+    }
+    &__close-button{
+        position:absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    &__body{
+        margin-bottom: 30px;
+    }
+  
+}

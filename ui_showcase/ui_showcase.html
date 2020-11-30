@@ -1,0 +1,677 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main-styles.css">
+    <title>ui Showcase</title>
+    <style>
+        .main-ui-showcase{
+            padding: 50px;
+        }
+        .ui-show-title{
+            color:#000; 
+            background-color: #FFF;
+            padding: 10px 20px;
+            font-size: 25px;            
+            margin-top: 50px;
+            border-radius: 10px;
+            
+        }
+        .ui-show-subtitle{
+            color:#FFF;   
+            font-size: 15px; 
+            text-decoration: underline;   
+            background-color: #8b97c6;
+            border-radius: 10px;     
+            padding: 5px 20px 
+        }
+        p{
+            color: rgb(41, 202, 82);
+        }
+        .hide{
+            display:none;
+        }
+    </style>
+    </head>
+<body>
+<section class="main-ui-showcase">
+
+    <section id="textos" class="section-shower">
+        <h2 class="ui-show-title">texts <i>(typography.scss)</i></h2>
+        <h3 class="ui-show-subtitle">Titles</h3>
+        <p>
+            big:
+        </p>
+        <div>
+            <h1 class="text text--title text--big">
+                Big title
+            </h1>
+        </div>
+        <p>
+            normal:
+        </p>
+        <div>
+            <h1 class="text text--title">
+               Normal title
+            </h1>
+        </div>
+        <p>
+            small:
+        </p>
+        <div>
+            <h1 class="text text--title text--small">
+               Small title
+            </h1>
+        </div>
+
+        <hr/>
+        <h3 class="ui-show-subtitle">Text lines</h3>
+
+        <p>
+            big:
+        </p>
+        <div>
+             <p class="text text--line text--big">
+                 Text line big
+            </p>
+        </div>
+
+        <p>
+            small:
+        </p>
+        <div>
+             <p class="text text--line text-small">
+                Text line small
+            </p>
+        </div>
+
+        <p>
+           uppercase:
+        </p>
+
+        <div>
+             <p class="text text--line text--uppercase">
+                Uppercase text line
+            </p>
+        </div>
+
+       <p>
+           expanded:
+        </p>
+        
+        <div>
+             <p class="text text--line text--expanded">
+                Expanded text line
+            </p>
+        </div>    
+
+        <p>
+            regular(400):
+         </p>
+         
+         <div>
+              <p class="text text--line text--400">
+                Regular(400) text line
+             </p>
+         </div>    
+ 
+         <p>
+            lime color:
+         </p>
+         
+         <div>
+              <p class="text text--line text--lime">
+                Lime color text line
+             </p>
+         </div> 
+
+         <p>
+            red color:
+         </p>
+         
+         <div>
+              <p class="text text--line text--red">
+                 Red color text line
+             </p>
+         </div>  
+
+         <p>
+            white color:
+         </p>
+         
+         <div>
+              <p class="text text--line text--white">
+                 White color text line
+             </p>
+         </div> 
+
+         <hr/>
+         <h3 class="ui-show-subtitle">Numerals</h3>
+ 
+         <p>
+             big:
+         </p>
+         <div>
+              <p class="text text--numeral text--big">
+                  1234567
+             </p>
+         </div>
+    
+
+        <p>
+            medium:
+        </p>
+        <div>
+             <p class="text text--numeral text--medium">
+                 1234567
+            </p>
+        </div>
+
+        <p>
+            normal:
+        </p>
+        <div>
+             <p class="text text--numeral">
+                 123456
+            </p>
+        </div>
+
+        <hr/>
+        <h3 class="ui-show-subtitle">Body text</h3>
+
+        <p>
+            normal:
+        </p>
+        <div>
+             <p class="text text--body">
+                 body text. an tincidunt vitae augue varius vestibulum. Aliquam molestie sed turpis laoreet tempor. Etiam sed quam mi. Curabitur auctor auctor magna quis iaculis. Donec dictum urna tortor, eu mattis urna accumsan sit amet. Nullam auctor, metus nec facilisis sollicitudin, velit eros ornare nunc, 
+            </p>
+        </div>
+
+
+    </section> <!-- end text section -->
+
+    <section id="elementos" class="section-shower">
+        <h2 class="ui-show-title">elements <i>(elements.scss)</i></h2>
+        <h3 class="ui-show-subtitle">Icons</h3>
+        <p>
+            normal
+        </p>
+        <div>
+            <img class="icon" src="../images/icon-facebook.svg">
+        </div>
+
+        <hr/>
+        <h3 class="ui-show-subtitle">Flags</h3>
+        <p>
+            icon flag
+        </p>
+        <div>
+            <div class="icon-flag">
+                <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-facebook.svg">
+                <span class="icon-flag__text text text--line">@nathanf</span>
+            </div>
+        </div>
+        <br/>
+        <p>
+            arrow flag (increase)
+        </p>
+        <div>
+            <div class="arrow-flag">
+                <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                <span class="arrow-flag__text text text--line text--lime">99 Today</span>
+            </div>
+        </div>
+        <br/>
+        <p>
+            arrow flag (decrease)
+        </p>
+        <div>
+            <div class="arrow-flag">
+                <div class="arrow-flag__icon arrow-flag__icon--decrease"></div>
+                <span class="arrow-flag__text text text--line text--red">99 Today</span>
+            </div>
+        </div>
+        <br/>
+        <p>
+            figure flag (normal)
+        </p>
+        <div style="display:flex">
+            <div class="figure-flag figure-flag--normal">
+                <div class="figure-flag__figure">
+                    <span class="text text--numeral text--medium">1987</span> 
+                </div>
+                <div class="figure-flag__description figure-flag__description--short">
+                    <p class="text text--body text--small">Total followers</p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <p>
+            figure flag (increase)
+        </p>
+        <div style="display:flex">
+            <div class="figure-flag figure-flag--increase">
+                <div class="figure-flag__figure">
+                    <span class="text text--numeral text--medium">81</span> 
+                </div>
+                <div class="figure-flag__description">
+                    <p class="text text--body text--small">New followers in the past 10 days</p>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <p>
+            figure flag (decrease)
+        </p>
+        <div style="display:flex">
+            <div class="figure-flag figure-flag--decrease">
+                <div class="figure-flag__figure">
+                    <span class="text text--numeral text--medium">144</span> 
+                </div>
+                <div class="figure-flag__description">
+                    <p class="text text--body text--small">New followers TODAY</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="botones" class="section-shower">
+        <h2 class="ui-show-title">buttons <i>(buttons.scss)</i></h2>       
+        <p>
+           toggle button
+        </p>
+        <div>
+            <button class="btn btn--toggle">
+                <span class="btn__text text text--line">
+                    Dark Mode
+                </span>
+                <div class="btn__switch-background">
+                    <div class="btn__switch-indicator">
+
+                    </div>
+                </div>
+            </button>
+        </div>
+
+        <br/>
+        <p>
+            icon button
+         </p>
+         <div>
+            <button class="btn btn--icon">
+                <img src="../images/icon-close.svg">
+            </button>
+         </div>
+
+    </section>
+
+    <section id="cards" class="section-shower">
+
+        <h2 class="ui-show-title">cards <i>(cards.scss)</i></h2> 
+
+        <h3 class="ui-show-subtitle">big cards</h3> 
+        <p>
+          normal
+        </p>
+        <div>
+
+            <div class="card card--big" data-id="" tabindex="0">
+                <div class="card__top-line"></div>
+                <div class="card__header">
+                    <div class="icon-flag">
+                        <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-facebook.svg">
+                        <span class="icon-flag__text text text--line">@nathanf</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <span class="text text--numeral text--big  u-display u-display--block u-spacer-vertical u-spacer-vertical--5">1987</span>
+                    <span class="text text--line text--expanded text--uppercase text--400 text--medium u-display u-display--block">followers</span>
+                </div>
+                <div class="card__footer">
+                    <div class="arrow-flag">
+                        <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                        <span class="arrow-flag__text text text--line text--lime">12 Today</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p>
+            facebook
+        </p>
+          <div>
+  
+            <div class="card card--big" data-id="" tabindex="0">
+                <div class="card__top-line card__top-line--facebook"></div>
+                <div class="card__header">
+                    <div class="icon-flag">
+                        <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-facebook.svg">
+                        <span class="icon-flag__text text text--line">@nathanf</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <span class="text text--numeral text--big  u-display u-display--block u-spacer-vertical u-spacer-vertical--5">1987</span>
+                    <span class="text text--line text--expanded text--uppercase text--400 text--medium u-display u-display--block">followers</span>
+                </div>
+                <div class="card__footer">
+                    <div class="arrow-flag">
+                        <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                        <span class="arrow-flag__text text text--line text--lime">12 Today</span>
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+
+        <p>
+            twitter
+        </p>
+          <div>
+  
+            <div class="card card--big" data-id="" tabindex="0">
+                <div class="card__top-line card__top-line--twitter"></div>
+                <div class="card__header">
+                    <div class="icon-flag">
+                        <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-twitter.svg">
+                        <span class="icon-flag__text text text--line">@nathanf</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <span class="text text--numeral text--big  u-display u-display--block u-spacer-vertical u-spacer-vertical--5">1987</span>
+                    <span class="text text--line text--expanded text--uppercase text--400 text--medium u-display u-display--block">followers</span>
+                </div>
+                <div class="card__footer">
+                    <div class="arrow-flag">
+                        <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                        <span class="arrow-flag__text text text--line text--lime">12 Today</span>
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+
+        <p>
+            instagram
+        </p>
+          <div>
+  
+            <div class="card card--big" data-id="" tabindex="0">
+                <div class="card__top-line card__top-line--instagram"></div>
+                <div class="card__header">
+                    <div class="icon-flag">
+                        <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-instagram.svg">
+                        <span class="icon-flag__text text text--line">@nathanf</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <span class="text text--numeral text--big  u-display u-display--block u-spacer-vertical u-spacer-vertical--5">1987</span>
+                    <span class="text text--line text--expanded text--uppercase text--400 text--medium u-display u-display--block">followers</span>
+                </div>
+                <div class="card__footer">
+                    <div class="arrow-flag">
+                        <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                        <span class="arrow-flag__text text text--line text--lime">12 Today</span>
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+
+          <p>
+           youtube
+        </p>
+          <div>
+  
+            <div class="card card--big" data-id="" tabindex="0">
+                <div class="card__top-line card__top-line--youtube"></div>
+                <div class="card__header">
+                    <div class="icon-flag">
+                        <img alt="facebook-icon" class="icon-flag__icon icon" src="../images/icon-youtube.svg">
+                        <span class="icon-flag__text text text--line">@nathanf</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <span class="text text--numeral text--big  u-display u-display--block u-spacer-vertical u-spacer-vertical--5">1987</span>
+                    <span class="text text--line text--expanded text--uppercase text--400 text--medium u-display u-display--block">followers</span>
+                </div>
+                <div class="card__footer">
+                    <div class="arrow-flag">
+                        <div class="arrow-flag__icon arrow-flag__icon--increase"></div>
+                        <span class="arrow-flag__text text text--line text--lime">12 Today</span>
+                    </div>
+                </div>
+            </div>
+  
+         </div>
+
+         <hr/>
+
+         <h3 class="ui-show-subtitle">small</h3>
+
+        
+          <div style="height: 150px;">
+  
+            <div class="card card--small" tabindex="0">
+                <div class="card__header">
+                    <div class="card__title">
+                        <span class="text text--line">Page Views</span>
+                    </div>
+                    <div class="card__icon">
+                        <img class="icon" src="../images/icon-facebook.svg">
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__number">
+                        <span class="text text--numeral text--medium">87</span>
+                    </div>       
+                    <div class="card__status">
+                        <div class="arrow-flag">
+                            <div class="arrow-flag__icon arrow-flag__icon--increase">
+
+                            </div>
+                            <span class="arrow-flag__text text text--line text--lime">3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+
+    </section>
+
+    <section id="chart" class="section-shower">
+
+        <h2 class="ui-show-title">charts <i>(scripts)</i></h2> 
+      
+        <div id="chart-showcase__chart-graph-ui" class="chart-showcase__chart-graph">
+
+            <canvas id="chart-showcase-target">
+                <!--chart will be rendered here-->
+            </canvas>
+
+        </div>
+       
+
+    </section>
+
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
+
+<script>
+window.onload=(()=>{  
+
+    const FONT_SIZES=[10, 12, 14]
+
+    // chart global config
+
+    // point options
+
+    Chart.defaults.global.elements.point.borderColor= "hsl(243, 51%, 70%)"
+    Chart.defaults.global.elements.point.borderWidth= 1
+    Chart.defaults.global.elements.point.backgroundColor= "hsl(230, 17%, 14%)"
+    Chart.defaults.global.elements.point.radius= 5
+    Chart.defaults.global.elements.point.hoverRadius= 7
+    Chart.defaults.global.elements.point.hitRadius= 2
+    Chart.defaults.global.elements.point.hoverBackgroundColor="hsl(243, 51%, 70%)"
+    Chart.defaults.global.elements.point.hoverBorderWidth=1
+    Chart.defaults.global.elements.point.hoverBorderColor="hsl(243, 51%, 70%)"
+
+    // font options
+
+    Chart.defaults.global.defaultFontColor="hsl(243, 51%, 70%)"
+    Chart.defaults.global.defaultFontFamily="Inter, sans-serif"
+    Chart.defaults.global.defaultFontSize=10
+
+    // border options
+
+    Chart.defaults.global.elements.line.borderColor= "hsl(243, 51%, 70%)"
+    Chart.defaults.global.elements.line.borderWidth=2
+
+    // text options
+
+    Chart.defaults.global.legend.display=false
+    Chart.defaults.global.title.display=false
+
+    // tooltip options
+
+    Chart.defaults.global.tooltips.bodyFontColor="hsl(243, 51%, 70%)"
+    Chart.Tooltip.positioners.custom = function(elements, eventPosition) {
+        return {
+            x: eventPosition.x,
+            y: eventPosition.y + 10
+        };
+    };
+
+    // chart init
+
+    let ctx = document.getElementById('chart-showcase-target');
+    ctx.height=100
+
+    const createChart=(target)=>{    
+
+        let newChart = new Chart(target, {
+            type: 'line',
+            data: {
+                labels: ["a","b","c","d","e","f","g"],
+                datasets: [{
+                    label: 'test value',
+                    data: [28, 60, 3, 44, 9, 70, -5],            
+                }]
+            },         
+            options: {
+                scales: {          
+                    yAxes: [{
+                        stacked:true,
+                        color: "hsl(243, 51%, 70%)",
+                        ticks: {
+                            beginAtZero: true,
+                            padding: 20,                   
+                        },
+                        gridLines:{                   
+                            color: "hsl(228, 26%, 27%)",
+                            lineWidth: 2,
+                            borderDash:[3],                           
+                            drawTicks: false                    
+                        }
+        
+                    }],
+                    xAxes: [{
+                        offset:true,
+                        stacked:true,
+                        color: "hsl(243, 51%, 70%)",              
+                        ticks: {
+                            beginAtZero: true,
+                            padding: 20                   
+                        },
+                        gridLines:{                   
+                            color: "hsl(228, 26%, 27%)",
+                            lineWidth: 2,
+                            borderDash:[3],                  
+                            drawTicks: false,                  
+                        }
+        
+                    }],
+                
+                },      
+                responsive: true,
+                maintainAspectRatio:false,
+                tooltips:{
+                    callbacks:{
+                        title: function (){},
+                        label: function(tooltipItem, data) {
+                            var label = Math.round(tooltipItem.yLabel * 100) / 100;                     
+        
+                            if (label) {
+                                label += ' ' + data.datasets[tooltipItem.datasetIndex].label || '';                        
+                            }
+                        
+                            return label;
+                        }
+                    },
+                    cornerRadius: 0,
+                    caretSize: 0,
+                    xPadding: 16,
+                    yPadding: 10,
+                    backgroundColor: 'hsl(230, 17%, 14%)', 
+                    borderColor: 'hsl(243, 51%, 70%)',
+                    borderWidth: 1,
+                    displayColors: false,
+                    position:"custom",
+                    yAlign: "top",
+                    xAlign:"center"       
+                }
+            }
+        });
+
+        return newChart
+    }
+
+    let mainChart=createChart(ctx);
+
+    let resizeListening=true
+    
+    const updateChartFontSize=()=>{
+       
+    
+        if(resizeListening===true){
+            resizeListening=false
+            let resizeListeningTimeOut=setTimeout(()=>{
+                resizeListening=true
+                clearTimeout(resizeListeningTimeOut)
+            }, 200)
+
+            let chart=mainChart
+            let winWidth=window.innerWidth
+            
+            if(winWidth<600){
+                Chart.defaults.global.defaultFontSize=FONT_SIZES[0]
+
+            }else if(winWidth>=600 && winWidth<800){
+                Chart.defaults.global.defaultFontSize=FONT_SIZES[1]   
+              
+            }else{
+                Chart.defaults.global.defaultFontSize=FONT_SIZES[2] 
+             
+            }       
+
+            chart.update()   
+        } 
+    }
+
+    updateChartFontSize();
+
+    window.addEventListener('resize', updateChartFontSize);
+
+})
+
+</script>
+    
+</body>
+</html>

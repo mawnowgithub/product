@@ -1,0 +1,97 @@
+// file containing project custom grid system
+// the system was defined to respond to proyect needs 
+// it is based on a 4 colum layout which can be nested to
+// produce complex layouts
+
+.g-main-container{
+    display:flex;
+    flex-direction:column;
+    padding:10px
+}
+
+.g-row{
+    display:flex;        
+    flex-wrap:wrap;  
+    height: 100%;
+}
+
+.g-col{   
+    
+    $parent: &;
+    display:flex;    
+    flex-direction: column;  
+
+    &--1{
+
+        width:100%;      
+        flex: 0 0 100%;
+
+        @media #{$tablet-break}{
+            width:50%;
+            flex: 0 0 50%;
+        }
+        @media #{$pc-break}{
+            width:25%;
+            flex: 0 0 25%;
+        }
+        &#{$parent}--static{
+            width:25%;
+            flex: 0 0 25%;
+        }
+
+        &#{$parent}--mobile{
+            &--50{
+
+                width:50%;
+                flex: 0 0 50%;
+
+                @media #{$tablet-break}{
+                    width:50%;
+                    flex: 0 0 50%;
+                }
+                @media #{$pc-break}{
+                    width:25%;
+                    flex: 0 0 25%;
+                }
+            }
+        }
+
+
+    }
+    &--2{
+        width:100%;
+        flex: 0 0 100%;
+        @media #{$tablet-break}{
+            width:50%;
+            flex: 0 0 50%;
+        }
+        &#{$parent}--static{
+            width:50%;
+            flex: 0 0 50%;
+        }
+    }
+    &--3{
+
+        width:100%;
+        flex: 0 0 100%;
+
+        @media #{$tablet-break}{
+            width:50%;
+            flex: 0 0 50%;
+        }
+          
+        @media #{$pc-break}{
+            width:75%;
+            flex: 0 0 75%;
+        }
+        &#{$parent}--static{
+            width:75%;
+            flex: 0 0 75%;
+        }
+    }
+    &--4{
+        width:100%;
+        flex: 0 0 100%
+    }
+}
+

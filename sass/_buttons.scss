@@ -1,0 +1,82 @@
+// file containing button definitions for the project
+// all btn should be html <button> elements
+
+.btn{
+    $parent:&;
+    cursor:pointer;  
+
+    &--toggle{
+      
+        display:flex;
+        align-items: center;
+
+        &:hover, &:focus{
+            & #{$parent}__text{
+                color: $white;
+            }
+            & #{$parent}__switch-indicator{
+                background-color: $dark-desaturated-blue;
+            }
+        }
+
+        & #{$parent}__text{
+            margin-right: 8px;
+            white-space: nowrap;
+
+            @media #{$tablet-break}{
+                margin-right: 12px;
+            }
+            
+            @media #{$pc-break}{
+               margin-right: 15px;
+            }
+        }
+
+        & #{$parent}__switch-background{
+            background: $toggle;           
+            height:22px;
+            padding:2px;
+            position:relative;
+            border-radius: 11px;
+            width: 40px;
+
+            @media #{$tablet-break}{
+                width:44px;
+            }
+            
+            @media #{$pc-break}{
+                width:48px;
+            }
+        }
+
+        & #{$parent}__switch-indicator{
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            position:absolute;
+            top:2px;
+            left:2px;
+            background-color: $dark-blue;
+        }
+    }
+
+    &--icon{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        transition: all 0.2s;
+        border-radius: 50%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        > img{
+            width: 14px;
+            height: 14px;
+        }
+
+        &:hover, &:active, &:focus{
+            background-color: rgba(0,0,0,0.25);
+        }
+    }
+}

@@ -1,0 +1,170 @@
+// file containing the definitios for card component
+// there are two major variation of cards (small and big)
+// and some modificators for each one to serve to project needs
+
+.card{  
+    $parent:&;   
+    background-color: $dark-desaturated-blue;
+    border-radius: 8px;
+    margin-bottom:20px;
+    text-align: center;
+    transition: all 0.2s;
+    color: $white;
+    position:relative;
+    overflow: hidden;
+    margin:5px;   
+
+    @media #{$tablet-break}{
+        margin:3px;
+    }
+    
+    @media #{$pc-break}{
+        margin:5px;
+    }
+
+    @media #{$pc-break-hd}{
+        margin:10px;
+     }
+
+
+    &--big{
+        min-height: 100px;
+        padding:25px 20px 20px 20px;
+
+        @media #{$tablet-break}{
+            padding:30px 20px 23px 20px;
+        }
+        
+        @media #{$pc-break}{
+            padding: 32px 20px 25px 20px;
+        }
+        
+        
+        & #{$parent}__top-line{
+            width:100%; 
+            height: 4px;
+            position:absolute;
+            top:0;
+            right: 0;
+            background-color: #FFF;
+
+            &--facebook{
+                background-color: $facebook;
+            }
+    
+            &--twitter{
+                background-color: $twitter;
+            }
+    
+            &--instagram{
+                background: $instagram;
+            }
+    
+            &--youtube{
+                background-color: $youtube;
+            }
+
+        }
+        & #{$parent}__header{
+            margin-bottom:18px;
+
+            @media #{$tablet-break}{
+                margin-bottom:20px;
+            }
+            
+            @media #{$pc-break}{
+                margin-bottom:24px;
+            }
+
+        }
+        & #{$parent}__body{
+            margin-bottom:15px;
+
+            @media #{$tablet-break}{
+                margin-bottom:20px;
+            }
+            
+            @media #{$pc-break}{
+                margin-bottom:25px;
+            }
+
+        }     
+    }
+
+    &--small{
+        min-height: 50px;
+        text-align: left;
+        padding: 20px; 
+        display:flex;
+        flex-flow: column;
+        justify-content: space-between;  
+        height: 100%;   
+
+        @media #{$tablet-break}{
+            padding: 20px;
+        }
+        
+        @media #{$pc-break}{
+            padding: 25px 20px;
+        }
+
+        @media #{$pc-break-hd}{
+            padding: 25px 30px 25px 25px;
+         }
+
+        & #{$parent}__header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom:18px;
+            
+            @media #{$tablet-break}{
+                margin-bottom:24px;
+            }
+            
+            @media #{$pc-break}{
+                margin-bottom:27px;
+            }
+        }
+        & #{$parent}__body{           
+            display:flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-flow:row;
+
+            @media #{$tablet-break}{
+                flex-flow:column;
+            }
+            
+            @media #{$pc-break}{
+                flex-flow:row;
+            }
+
+        }
+
+        & #{$parent}__number{           
+           margin-bottom:0;
+
+            @media #{$tablet-break}{
+                margin-bottom:5px;
+            }
+            
+            @media #{$pc-break}{
+                margin-bottom:0;
+            }
+        }
+
+        & #{$parent}__icon{  
+
+            margin-left: 15px;
+            align-self: baseline;
+            
+        }
+
+    }
+
+    &:hover, &:focus{       
+        background-color: $desaturated-blue-dark;
+        cursor:pointer;
+    }
+}

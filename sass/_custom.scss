@@ -1,0 +1,36 @@
+// file containing custom definitions for specific elements that can´t be
+// place anywhere else 
+
+body{
+    background-color: $very-dark-blue;    
+
+    &.modal--open{
+        overflow: hidden;
+    }
+}
+
+.g-main-container{
+    max-width:1100px;
+    margin: 0 auto;
+    margin-top:10px;
+    position:relative;
+    z-index:5;
+
+    @media #{$tablet-break}{
+        margin-top:20px;
+    }
+    
+    @media #{$pc-break}{
+        margin-top:30px;
+    }
+
+}
+
+.bg-decorator-page{
+    position: absolute;
+    width:100%;
+    z-index:0;
+    background-color: $dark-blue;
+    height: 250px;
+    top:0
+}

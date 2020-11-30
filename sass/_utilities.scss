@@ -1,0 +1,110 @@
+// file containing utility classes to modify specific 
+// atributes on UI elements
+
+.u-align-flex{
+
+    &--right{
+        align-items: end;
+        align-items: flex-end;
+    }
+
+    &--horizontal-center{
+       align-items: center;
+    }
+
+    &--vertical-center{
+        justify-content: center;
+    }
+
+    &--bottom{
+        justify-content: end;
+    }
+}
+
+.u-spacer{   
+    $parent:&;
+    &-vertical{   
+        &--5{
+            margin-bottom: 5px;          
+        }    
+        &--10{
+            margin-bottom: 10px;
+        }
+        &--15{
+            margin-bottom: 15px;
+        }
+        &--20{
+            margin-bottom: 20px;
+        }
+        &--30{
+            margin-bottom: 30px;          
+        }
+        &--responsive{
+            &-20{
+                    margin-bottom: 5px; 
+                
+                    @media #{$tablet-break}{
+                        margin-bottom: 10px; 
+                    }
+
+                    @media #{$pc-break}{
+                        margin-bottom: 20px; 
+                    }
+            }
+            &-30{
+                margin-bottom: 10px; 
+               
+                @media #{$tablet-break}{
+                    margin-bottom: 20px; 
+                }
+
+                @media #{$pc-break}{
+                    margin-bottom: 30px; 
+                }      
+            }
+        }
+    }    
+}
+
+.u-margin{
+    &--l{
+        &-5{
+            margin-left: 5px;
+        }
+        &-10{
+            margin-left: 10px;
+        }
+        &-15{
+            margin-left: 15px;
+        }
+        &-20{
+            margin-left: 20px;
+        }
+    }
+    &--r{
+        &-5{
+            margin-right: 5px;
+        }
+        &-10{
+            margin-right: 10px;
+        }
+        &-15{
+            margin-right: 15px;
+        }
+        &-20{
+            margin-right: 20px;
+        }
+    }
+}
+
+.u-display{
+    &--block{
+        display:block
+    }
+    &--inline{
+        display: inline;
+    }
+    &--flex{
+        display: flex;
+    }
+}
